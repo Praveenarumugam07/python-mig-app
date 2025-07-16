@@ -34,7 +34,7 @@ jobs:
       - run:
           name: 🏗️ Create startup script file
           command: |
-            cat <<'EOF' > startup-script.sh
+            cat \<<'EOF' > startup-script.sh
             #!/bin/bash
             apt-get update
             apt-get install -y python3-pip git
